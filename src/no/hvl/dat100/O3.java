@@ -16,13 +16,13 @@ public class O3 {
                 showMessageDialog(null, "Vennligst skriv inn et heltall større enn 0.");
             } else {
                 // Beregner verdien av n!
-                int faktorielle = 1;
+                int denFaktorielle = 1;
                 for (int i = 1; i <= n; i++) {
-                    faktorielle *= i;
+                    denFaktorielle *= i;
                 }
 
                 // Viser verdien av n! i en dialogboks
-                showMessageDialog(null, "Verdien av " + n + "! er: " + faktorielle);
+                showMessageDialog(null, "Verdien av " + n + "! er: " + denFaktorielle);
             }
         } else {
             // Viser en feilmelding hvis input ikke er et gyldig heltall

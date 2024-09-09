@@ -23,35 +23,28 @@ public class O1 {
         double trinn5P = 0.176;
         
         double skatteTrekk = 0;
-        
-        String skatteTrinn = "";
 
         if (bruttoinntekt > trinn4I) {
             skatteTrekk += (bruttoinntekt - trinn4I) * trinn5P;
             bruttoinntekt = trinn4I;
-            skatteTrinn = "5";
         }
         if (bruttoinntekt > trinn3I) {
             skatteTrekk += (bruttoinntekt - trinn3I) * trinn4P;
             bruttoinntekt = trinn3I;
-            skatteTrinn = "4";
         }
         if (bruttoinntekt > trinn2I) {
             skatteTrekk += (bruttoinntekt - trinn2I) * trinn3P;
             bruttoinntekt = trinn2I;
-            skatteTrinn = "3";
         }
         if (bruttoinntekt > trinn1I) {
             skatteTrekk += (bruttoinntekt - trinn1I) * trinn2P;
             bruttoinntekt = trinn1I;
-            skatteTrinn = "2";
         }
         if (bruttoinntekt > trinn0I) {
             skatteTrekk += (bruttoinntekt - trinn0I) * trinn1P;
-            skatteTrinn = "1";
         }
 
-        System.out.println("Du er på skattetrinn " + skatteTrinn +", ditt skattetrekk er derfor: " + skatteTrekk);
+        showMessageDialog(null, "Ditt trinntrekk er: " + skatteTrekk);
     }
 
 }

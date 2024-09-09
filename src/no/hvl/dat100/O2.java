@@ -8,7 +8,8 @@ public class O2 {
 	public static void main(String[] args) {
 		String antallEleverS = showInputDialog("Hvor mange elever skal graderes?");
 		int antallElever = Integer.parseInt(antallEleverS);
-
+		
+		//Leser av resultat for oppgitt antall elever
 		for (int i = 0; i < antallElever; i++) {
 			String innlestSumS = showInputDialog("Hvor mange poeng fikk eleven?");
 			int innlestSum = Integer.parseInt(innlestSumS);
@@ -21,7 +22,8 @@ public class O2 {
 				innlestSum = -1;
 			}
 			String karakter;
-
+			
+			//Sjekker sum mot karakterskala og setter karakter tilsvarende poengsum
 			if (innlestSum <= 39 && innlestSum > l) {
 				karakter = "F";
 				showMessageDialog(null, "Eleven har fått karakteren " + karakter + " med " + innlestSum + " poeng.");
